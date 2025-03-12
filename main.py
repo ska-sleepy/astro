@@ -34,7 +34,7 @@ def main():
         for aster in asteroids:
             for bullet in bullets:
                 if aster.check_collisions(bullet):
-                    aster.kill()
+                    aster.split()
                     bullet.kill()
 
 
